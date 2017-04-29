@@ -1,0 +1,8 @@
+<h1>Please provide a number to check if it's even</h1>
+
+    <%= form_tag "/validate" do %>
+    <!-- form-tag = send data to folder validate-->
+        <%= text_field_tag :check_number %>
+        <%= submit_tag "Check" %>
+        
+    <% end %>

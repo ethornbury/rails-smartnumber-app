@@ -1,0 +1,9 @@
+<h1>Even Number Check Result</h1><br>
+
+    <%= @number_to_check %> <%= @is_even %><br>
+    
+<h1>Please provide a number to check if it's even</h1>
+    <%= form_tag "/validate" do %>
+        <%= text_field_tag :check_number %>
+        <%= submit_tag "Check" %>
+    <% end %>
