@@ -4,8 +4,8 @@ class EvensController < ApplicationController
   before_action :set_even, only: [:show, :edit, :update, :destroy]
 
   def isNumberEven
-    @number_to_check=params[:check_number]
-    @is_even = EvenNumber.isEven(@number_to_check.to_i)
+    @number_to_check=params[:check_number] 
+    @is_even = EvenNumber.isEven(@number_to_check.to_i) #sending number to the method isEven in the /lib/even_number.rb
     
     if @is_even
       @is_even = " is even"
